@@ -1,0 +1,47 @@
+.info-carousel {
+  margin-left: 25%;
+  margin-top: 2%;
+  width: 50%;
+}
+
+.info-carousel-img {
+  /*height: 100px;*/
+  width: 20%;
+  margin-bottom: 4%;
+  padding-right: 20px;
+}
+
+.info-content {
+  display: inline-block;
+  width: 42%;
+  position: absolute;
+}
+
+.info-content-broadcast {
+  display: inline-block;
+  width: 42%;
+  position: absolute;
+  top: 29%;
+}
+
+.info-title {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.info-vid-carousel {
+  display:inline-block;
+  width: 40%;
+  position:absolute;
+}
+
+#lock-it-vid {
+  position: absolute;
+  display: inline-block;
+  left: 41%;
+
+}
+
+a {
+  text-decoration: none;
+}

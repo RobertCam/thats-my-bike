@@ -1,0 +1,80 @@
+#navbox {
+ width: 50px;
+ height: 50px;
+ position: fixed;
+ top: 5%;
+ right: 5%;
+ text-align: center;
+ background: url("wheels9.png");
+}
+
+.dropdown-toggle {
+  padding: .5em 1em;
+  background: #777;
+  border-radius: .2em .2em 0 0;xz
+}
+
+#dropdown {
+  display:none;
+  position: fixed;
+  top: 16%;
+  right: 2%;
+  width: 100px;
+  padding: 0;
+  border-radius: 0 0 .2em .2em;
+}
+
+.dropdown-item a {
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-item a:hover {
+  text-decoration: none;
+  color: #C0C0C0;
+}
+
+.dropdown-item:hover {
+  text-decoration: none;
+  color: #C0C0C0;
+}
+
+.dropdown-item {
+  cursor: pointer;
+}
+
+#new-bike-form-index {
+  position: absolute;
+  top: 4%;
+  left: 20%;
+  width: 70%;
+  height: 425px;
+  overflow: auto;
+}
+
+#form-push-right-bike-img {
+  margin-left: 9%;
+}
+
+#form-push-right-for-sale {
+  margin-left: 8%;
+}
+
+.check-up {
+  margin-top: -5%;
+}
+
+#register-bike-index {
+  display: inline-block;
+  margin-left: 15%;
+  margin-top: 3%;
+}
+
+#bike_componentImgs {
+  display: inline-block;
+}
+
+#register-bike-button {
+  margin-top: 3%;
+  margin-left: 4%;
+}

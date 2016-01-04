@@ -1,0 +1,53 @@
+.profile-img {
+  height: 300px;
+  width:100%;
+  border-radius: 10px;
+}
+
+.profile-img-container {
+  height: 300px;
+  width:20%;
+  display: inline-block;
+  position: absolute;
+  left: 25%;
+  top: 15%;
+}
+
+.profile-content {
+  height: 450px;
+  width: 100%;
+  position: relative;
+}
+
+.profile-right-content {
+  display: inline-block;
+  position: absolute;
+  top: 15%;
+  left: 55%;
+}
+
+.username {
+  font-weight: bold;
+}
+
+#user-edit-form {
+  display: none;
+  margin-left: -20%;
+}
+
+.edit-profile-field {
+  width: 100%;
+}
+
+.profile-submit {
+  margin-left: 4%;
+  margin-top: 2%;
+}
+
+.profile-edit-hide {
+  margin-left: 4%;
+}
+
+.edit-profile-button {
+  margin-top: 10%;
+}

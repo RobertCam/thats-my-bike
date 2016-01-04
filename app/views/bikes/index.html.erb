@@ -1,0 +1,18 @@
+<%= render "layouts/site_nav" %>
+
+<div class="bike-index-top-content">
+  <div id="index-button-container">
+    <button id="stolen-index-button" class="button stolen-index-button">Stolen</button> 
+    <button id="for-sale-index-button" class="button for-sale-index-button">For Sale</button> 
+  </div>
+  <div id="for-sale-bike-index">
+    <%= render 'for_sale_index' %>
+  </div>
+  <div id="stolen-bikes-index">
+    <%= render 'stolen_index' %>
+  </div>
+</div>
+<div class="index-footer">
+    <%= render "info" %>
+</div>
+

@@ -1,0 +1,96 @@
+/*styling for landing page*/
+.background-container {
+   width: 100%;
+  height: 100%;
+  /*negative top margin to center background. see landing content to adjust child elements*/
+  position: fixed;
+}
+
+.header-image-container label {
+  color:white;
+}
+
+.header-image-container {
+  width: 100%;
+  height: 950px;
+  /*negative top margin to center background. see landing content to adjust child elements*/
+  margin-top: -20%;
+  position: relative;
+  background-image: url("bike-gif.gif");
+  background-repeat: no-repeat;
+  background-size: 120% 100%;
+  overflow: auto;
+}
+
+.landing-overlay {
+  height: 130%;
+  width: 100%;
+  background-color: rgba(243, 244, 246, 0.35);
+}
+
+.landin-content {
+  position: fixed;
+  top: 20%;
+}
+
+.landing-content > div {
+  position: fixed;
+  top: 18%;
+  left: 8%;
+  color: white;
+}
+
+.landing-content .button {
+  display: block;
+  color: white;
+  width: 80%;
+}
+
+.header-image-container .button {
+  color: white;
+}
+
+.signin-out {
+  position: fixed;
+  top: 3%;
+  right: 5%;
+  color: white;
+}
+
+.login-form {
+  margin-left: 20%;
+}
+
+.hidden-form {
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 43%;
+  width: 71%;
+}
+
+#user_age {
+  width: 60px;
+}
+
+.new-bike-form {
+  overflow: auto;
+}
+
+#register-bike-button-landing {
+  margin-left: 21%;
+  padding-top: 30px;
+  color: white;
+}
+
+.checkbox label {
+  display: inline-block;
+}
+
+.for-sale-checkbox {
+  margin-left: 20px;
+}
+
+.stolen-checkbox {
+  margin-left: 31px;
+}

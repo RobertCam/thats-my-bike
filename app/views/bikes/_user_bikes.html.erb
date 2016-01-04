@@ -1,0 +1,29 @@
+<div class="user-bikes-container">
+  <div id="owl-demo" class="owl-carousel owl-theme">
+    <% if @user_bikes != nil %>
+      <% @user_bikes.each do |bike| %>
+        <div class="item">
+          <div class="user-bike-image">
+            <% if bike.bikeImg? %>
+              <%= link_to image_tag(bike.bikeImg, class: "user-bike-image"), bike_path(bike) %>
+            <% else %>
+              <%= link_to image_tag(bike.bikeImgURL, class: "user-bike-image"), bike_path(bike) %> 
+            <% end %>
+          </div>
+          <div class="user-bike-index-info">
+            <div class="user-bike-index-content"><span>Make: </span><%= bike.make %></div>
+            <div class="user-bike-index-content"><span>Model: </span><%= bike.line %></div>
+            <div class="user-bike-index-content"><span>Serial Number: </span><%= bike.serialNum %></div>
+            <div class="user-bike-index-content"><span>Category: </span><%= bike.category %></div>
+            <% if bike.stolen == true %>
+              <div class="stolen">STOLEN</div>
+            <% elsif bike.for_sale == true %>
+              <div class="for-sale">FOR SALE</div>
+              <div class="user-bike-index-content"><span>Price: </span><%= bike.price %></div>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>

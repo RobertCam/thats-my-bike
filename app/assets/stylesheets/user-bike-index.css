@@ -1,0 +1,68 @@
+.stolen {
+  color: red;
+}
+
+.for-sale {
+  color: green;
+}
+
+
+/*Sizing and alignment for Carousel content*/
+.user-bike-image {
+  height: 100px;
+}
+
+#owl-demo .item{
+  display: block;
+  padding: 30px 0px;
+  padding-bottom: 0px;
+  margin: 5px;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+  height: 150px;
+}
+
+#owl-demo .item img {
+  display:inline;
+  margin-left: -20%;
+}
+
+.user-bike-index-info {
+  display:inline;
+  color: black;
+  width: 30%;
+  text-align: left;
+  position: absolute;
+  left: 50%;
+  top: 15%;
+}
+
+/*Carousel Controls Styling*/
+.owl-theme .owl-controls .owl-buttons div {
+  padding: 5px 9px;
+}
+ 
+.owl-theme .owl-buttons i{
+  margin-top: 2px;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+  position: absolute;
+}
+ 
+.owl-theme .owl-controls .owl-buttons .owl-prev{
+  left: 5%;
+  top: 30%; 
+}
+ 
+.owl-theme .owl-controls .owl-buttons .owl-next{
+  right: 5%;
+  top: 30%;
+}
+
+.owl-pagination {
+  text-align: center;
+}

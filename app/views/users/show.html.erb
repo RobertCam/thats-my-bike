@@ -1,0 +1,29 @@
+
+<div class="profile-content">
+  <div class="profile-img-container">
+    <%= image_tag(@user.profileImg, class: "profile-img") %>
+  </div>
+  <div class="profile-right-content">
+    <%= render 'layouts/nav2' %>
+    <div id="user-stats">
+      <h4 class="username"><%= @user.username %></h4>
+      <div class="user-info"><%= @user.firstName %> <%= @user.lastName %></div>
+      <div class="user-info"><span class="profile-label">Email: </span><%= @user.email %></div>
+      <div class="user-info"><%= @user.city %></div>
+      <button id="profile-edit" class="edit-profile-button">Edit</button>
+    </div>
+    <div id="user-edit-form">
+      <%= render "edit" %>
+      <div id="profile-edit" class="hide-form-button profile-edit-hide">Hide Form</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="index-footer">
+  <% if current_user %>
+    <%= render "bikes/user_bikes" %>
+  <% else %>
+    <%= render "bikes/info" %>
+  <% end %>
+</div>

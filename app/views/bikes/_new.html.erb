@@ -1,0 +1,111 @@
+<% @bike = Bike.new %>
+<%= form_for @bike do |f| %>
+   <% if @bike.errors.any? %>
+    <div class="error_messages">
+      <h2>Form is invalid</h2>
+      <ul>
+        <% for message in @bike.errors.full_messages %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="row">
+    <div class="three columns">
+      <div class="field">
+        <%= f.label :make %><br />
+        <%= f.text_field :make, placeholder: "make" %>
+      </div>
+    </div>
+    <div class="three columns">
+      <div class="field">
+        <%= f.label :line %><br />
+        <%= f.text_field :line %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="three columns">
+      <div class="field">
+        <%= f.label :serialNum, "Serial Number" %><br />
+        <%= f.text_field :serialNum, class: "serial-num-input" %>
+      </div>
+    </div>
+    <div class="three columns">
+      <div class="field">
+        <%= f.label :proofOfPurchase, "Proof Of Purchase" %><br />
+        <%= f.file_field :proofOfPurchase %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="three columns">
+      <div class="field">
+        <%= f.label :color, "Color" %><br />
+        <%= f.text_field :color %>
+      </div>
+    </div>
+    <div class="three columns">
+      <div class="field">
+        <%= f.label :category, "Category" %><br />
+        <%= f.text_field :category %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="three columns">
+      <%= f.label :bikeImg, "Image" %>
+      <%= f.file_field :bikeImg %>
+    </div>
+    <div class="three columns">
+      <%= f.label :bikeImgURL, "Image URL" %>
+      <%= f.text_field :bikeImgURL %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="three columns">
+      <%= f.label :description, "Description" %>
+      <%= f.text_area :description %>
+    </div>
+    <div class="three columns">
+      <%= f.label :components, "Custom Parts" %>
+      <%= f.text_area :components %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="three columns">
+      <%= f.label :componentImgs, "Upload Custom Parts Image" %>
+      <%= f.file_field :componentImgs %>
+    </div>
+    <div class="three columns">
+      <div class="field checkbox">
+        <%= f.label :stolen %>
+        <%= f.check_box :stolen, class: "stolen-checkbox" %>
+      </div>
+      <div class="field checkbox">
+        <%= f.label :for_sale %>
+        <%= f.check_box :for_sale, class: "for-sale-checkbox", id: "for-sale-form" %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="three columns">
+      <div class="field">
+        <%= f.label :price, "Price $" %>
+        <%= f.number_field :price %>
+      </div>
+    </div>
+    <div class="three columns">
+      <div class="field">
+        <%= f.label :contactEmail, "Contact Email" %>
+        <%= f.email_field :contactEmail %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div id="register-bike-button-landing" class="actions">
+      <%= f.submit "Register Bike" %>
+    </div>
+  </div>
+<% end %>
+

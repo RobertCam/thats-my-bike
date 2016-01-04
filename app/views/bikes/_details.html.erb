@@ -1,0 +1,44 @@
+  <h4><%= @bike.make %>: <%= @bike.line %></h4>
+  <h6><span class="bike-detail-label">Type: </span><%= @bike.category %> | <span class="bike-detail-label">Serial Number: </span><%= @bike.serialNum %></h6>
+  <h6><span class="bike-detail-label">Description: </span><%= simple_format(@bike.description) %></h6>
+  <h6><span class="bike-detail-label">Colour: </span><%= @bike.color %></h6>
+  <% if @bike.components == nil %>
+    <h6><span class="bike-detail-label">Custom Components: </span>None</h6>
+  <% else %>
+    <h6 class="components-label"><span class="bike-detail-label">Custom Components: </span></h6>
+      <h6 class="component-item"><%= simple_format(@bike.components) %></h6>
+  <% end %>
+  <% if @bike.componentImgs? %>
+    <div id="show-component-images-button" class="show-button">Show Custom Component</div>
+  <% end %>
+  <% if @bike.proofOfPurchase? %>
+    <div id="show-proof-button" class="show-button">Show Proof Of Purchase</div>
+  <% end %>
+    
+  <!-- show component images if present -->
+  <div class="row">
+    <% if @bike.componentImgs? %>
+      <div class="five columns">
+        <div class="component-image-container"><%= image_tag(@bike.componentImgs, class: "component-img") %></div>
+      </div>
+    <% end %>
+
+    <!-- show proof of purchase if present -->
+    <% if @bike.proofOfPurchase? %>
+      <div class="five columns">
+        <div class="proof-image-container"><%= image_tag(@bike.proofOfPurchase, class: "proof-img") %></div>
+      </div>
+    <% end %>
+  </div>
+
+  <!-- stolen and for sale tags -->
+  <% if @bike.stolen == true %>
+    <h3 class="stolen-label">STOLEN</h3>
+  <% end %>
+  <% if @bike.for_sale == true %>
+    <h3 class="for-sale-label">For Sale</h3>
+    <div class="show-price"><span class="bike-detail-label">Price: </span>$<%= @bike.price %></div>
+    <h6><span class="bike-detail-label">Contact Email: </span><%= @bike.contactEmail %></h6>
+  <% end %>
+  </div>
+

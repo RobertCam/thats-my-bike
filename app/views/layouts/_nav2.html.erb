@@ -1,0 +1,11 @@
+<nav>
+  <button id="navbox" class="button nav-button"></button> 
+    <div id="dropdown">
+      <div class="dropdown-item"><%= link_to('Bike Index', bikes_path) %></div>
+      <div class="dropdown-item"><%= link_to('Profile', user_path(current_user)) %></div>
+      <div class="dropdown-item"><%= link_to('Info', info_index_path) %></div>
+      <% if user_signed_in? %>
+        <div class="dropdown-item"><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></div>       
+      <% end %>
+    </div>
+</nav>

@@ -1,0 +1,74 @@
+.bike-index-top-content {
+  min-height: 450px;
+  overflow: auto;
+}
+
+.index-footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+/*  height: 240px;*/
+  border: solid 1px black;
+  border-bottom: none;
+}
+
+#stolen-bikes-index {
+  display: none;
+}
+
+#for-sale-bike-index {
+  display: none;
+}
+
+.stolen-index-button {
+  position: absolute;
+  left: 30%;
+  top: 30%;
+}
+
+.for-sale-index-button {
+  position: absolute;
+  left: 60%;
+  top: 30%;
+}
+
+.index-button {
+  position: fixed;
+  top: 5%;
+  left: 2.5%;
+}
+
+.for-sale-index-container {
+  margin: 20px;
+  padding: 20px;
+  margin-left: 13%;
+}
+
+.index-img {
+
+}
+
+.bike-index-img {
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  border-bottom: solid 1px black;
+}
+
+.bike-index-img a {
+  /*height: 75px;*/
+  padding: 0px;
+  border-bottom: solid 1px black;
+}
+
+.index-card {
+  border: solid 1px black;
+  padding: 12px;
+  font-size: 0.8em;
+  margin-bottom: 10%;
+  height: 150px;
+}
+
+.index-content {
+  padding: 1%;
+}

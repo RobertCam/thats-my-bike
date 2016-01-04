@@ -1,0 +1,47 @@
+<div class="background-container">
+<div class="header-image-container">
+  <div class="landing-overlay">
+    <div class="alerts">
+      <%= flash[:alert] %>
+    </div>
+    <div class="notices">
+      <%= flash[:notice] %>
+    </div>
+    <div class="signin-out">
+      <% if user_signed_in? %>
+        <%= link_to('Logout', destroy_user_session_path, :method => :delete, class: "button") %>        
+      <% else %>
+        <button id="login">Login</button>
+        <button id="sign-up" class="button">Sign Up</button> 
+      <% end %>
+    </div>
+    <div class="landing-content">
+      <div class="row">
+        <div class="four columns">
+          <h1 class="title">That's My Bike</h1>
+          <p class="landing-description">
+            A quick and simple way to register your bike. Enter the info and rest easy. You can also put it up for sale and let other users take a look. Or maybe you're wondering if that used bike you've got your eye on is actually stolen. Check out the registery to see if anyone on the site has flagged it.
+          </p>
+        <% if user_signed_in? %>
+          <button id="new-bike" class="button">Register Your Bike</button>
+        <% else %>
+          <button id="login" class="button">Register Your Bike</button>
+        <% end %>
+          <%= link_to('Check out Bikes', bikes_path, class: "button") %>
+        </div>
+      </div>
+    </div> <!-- landing-content -->
+    <div id="login-form" class="hidden-form">
+      <%= render "devise/sessions/new_session" %>
+    </div>
+    <div id="sign-up-form" class="hidden-form">
+      <%= render "devise/registrations/new" %>
+    </div>
+    <% if user_signed_in? %>
+      <div id="new-bike-form" class="hidden-form">
+        <%= render "bikes/new" %>
+      </div>
+    <% end %>
+  </div>
+</div>
+</div>
