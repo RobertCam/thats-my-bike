@@ -1,11 +1,10 @@
 #navbox {
- 
  height: 50px;
  position: fixed;
  top: 5%;
  left: 3%;
  text-align: center;
- /*background: url("wheels9.png");*/
+ background-color: white;
 }
 
 .dropdown-toggle {
@@ -22,11 +21,16 @@
   width: 100px;
   padding: 0;
   border-radius: 0 0 .2em .2em;
+  color: white;
+}
+
+.dropdown-item.nav2 a {
+  color: black;
 }
 
 .dropdown-item a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .dropdown-item a:hover {
@@ -101,3 +105,10 @@
   margin-top: 5%;
 }
 
+#new-bike-index-nav {
+  color: black;
+}
+
+#new-bike-index-nav:hover {
+  color: #C0C0C0;
+}

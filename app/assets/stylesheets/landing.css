@@ -94,3 +94,7 @@
 .stolen-checkbox {
   margin-left: 31px;
 }
+
+#new-bike {
+  background-color: none !important;
+}

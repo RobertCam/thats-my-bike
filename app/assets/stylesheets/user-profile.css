@@ -10,7 +10,7 @@
   width:30%;
   display: inline-block;
   position: absolute;
-  left: 14.5%;
+  left: 23%;
   top: 11%;
   overflow: hidden;
   border-radius: 10px;
@@ -18,17 +18,18 @@
 
 .profile-content {
   height: 450px;
-  width: 100%;
+  width: 90%;
   position: relative;
   margin-top: 3%;
   margin-left: 4%;
+  overflow: auto;
 }
 
 .profile-right-content {
   display: inline-block;
   position: absolute;
   top: 15%;
-  left: 53%;
+  left: 63%;
 }
 
 .username {

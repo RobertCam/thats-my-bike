@@ -18,7 +18,8 @@ $('body').on('click', '#new-bike-index-nav', function() {
   $('#new-bike-form-index-nav').slideToggle("slow", "linear");
   $('#show-bike-details-container').fadeToggle("fast");
   $('#show-bike-img-container').fadeToggle("fast");
-  $('#profile-content').slideToggle("slow", "linear");
+  $('.profile-img').fadeToggle("slow");
+  $('.profile-right-content').fadeToggle("slow");
 });
 
 $('body').on('click', '#login-nav', function() {

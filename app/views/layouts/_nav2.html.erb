@@ -4,15 +4,15 @@
       <% if user_signed_in? %>
         <div id="new-bike-index-nav" class="dropdown-item">Register Bike</div>
       <% end %>
-      <div class="dropdown-item"><%= link_to('Bike Index', bikes_path) %></div>
+      <div class="dropdown-item nav2"><%= link_to('Bike Index', bikes_path) %></div>
       <% if user_signed_in? %>
-        <div class="dropdown-item"><%= link_to('Profile', user_path(current_user)) %></div>
+        <div class="dropdown-item nav2"><%= link_to('Profile', user_path(current_user)) %></div>
       <% else %>
-        <div class="dropdown-item" id="login-nav">Login</div>  
+        <div class="dropdown-item nav2" id="login-nav">Login</div>  
       <% end %>
-      <div class="dropdown-item"><%= link_to('Info', info_index_path) %></div>
+      <div class="dropdown-item nav2"><%= link_to('Info', info_index_path) %></div>
       <% if user_signed_in? %>
-        <div class="dropdown-item"><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></div>       
+        <div class="dropdown-item nav2"><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></div>       
       <% end %>
     </div>
 </nav>

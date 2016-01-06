@@ -1,8 +1,15 @@
 .bike-index-top-content {
   max-height: 505px;
+  height: 505px;
   overflow: auto;
   margin-top: -2%;
   padding-top: 2%;
+  background: url("http://www.atlantaintownpaper.com/wp-content/uploads/2011/04/BikeLanes.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .index-footer {
@@ -27,18 +34,21 @@
   position: absolute;
   left: 28%;
   top: 37%;
+  background-color: white !important;
 }
 
 .for-sale-index-button {
   position: absolute;
   left: 62%;
   top: 37%;
+  background-color: white !important;
 }
 
 .index-button {
   position: fixed;
   top: 6%;
   right: 2.5%;
+  background-color: white !important;
 }
 
 .for-sale-index-container {
@@ -68,7 +78,8 @@
   padding: 12px;
   font-size: 0.8em;
   margin-bottom: 10%;
-  height: 180px;
+  min-height: 180px;
+  background-color: white;
 }
 
 .index-content {
