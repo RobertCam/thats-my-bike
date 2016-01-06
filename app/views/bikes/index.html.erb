@@ -1,10 +1,17 @@
 <%= render "layouts/site_nav" %>
+<%= render "search" %>
 
 <div class="bike-index-top-content">
-  <div id="index-button-container">
-    <button id="stolen-index-button" class="button stolen-index-button">Stolen</button> 
-    <button id="for-sale-index-button" class="button for-sale-index-button">For Sale</button> 
-  </div>
+  <% if @searchBikes != nil || @searchBikes == "" %>
+    <div id="search-results-container">
+      <%= render "search_results" %>
+    </div>
+  <% else %>
+    <div id="index-button-container">
+      <button id="stolen-index-button" class="button stolen-index-button">Stolen</button> 
+      <button id="for-sale-index-button" class="button for-sale-index-button">For Sale</button> 
+    </div>
+  <% end %>
   <div id="for-sale-bike-index">
     <%= render 'for_sale_index' %>
   </div>

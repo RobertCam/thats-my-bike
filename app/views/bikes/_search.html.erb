@@ -1,0 +1,10 @@
+<%= form_tag(bikes_path, method: "GET") do %>
+  <div class="row" id="search-form-container">
+    <div class="eight columns" id="search-first-child">
+      <%= search_field_tag :query, nil, placeholder: "Search Make, Model, or Serial Number", id: "search-field" %>
+    </div>
+    <div class="three columns">
+      <%= submit_tag("Search", name: nil, id: "search-button") %>
+    </div>
+  </div>
+<% end %>

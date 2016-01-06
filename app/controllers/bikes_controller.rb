@@ -1,7 +1,5 @@
 class BikesController < ApplicationController
 
-  # before_action :authenticate_user!
-
   def new
     @bike = Bike.new
   end
@@ -13,15 +11,16 @@ class BikesController < ApplicationController
     end
   end
 
-  def index
+  def index 
+    @searchBikes = Bike.search(params[:query])
+    # byebug
     @stolenBikes = Bike.where(stolen: true)
     @forSaleBikes = Bike.where(for_sale: true)
-    @user_bikes = Bike.where(user_id: current_user.id)
   end
 
   def show 
     @bike = Bike.find(params[:id])
-    # byebug
+    @bikeNew = Bike.new
   end
 
   def update

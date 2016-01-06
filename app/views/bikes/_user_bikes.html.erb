@@ -1,9 +1,11 @@
 <div class="user-bikes-container">
   <div id="owl-demo" class="owl-carousel owl-theme">
+  <% if user_signed_in? %>
+    <% @user_bikes = Bike.where(user_id: current_user.id) %>
     <% if @user_bikes != nil %>
       <% @user_bikes.each do |bike| %>
         <div class="item">
-          <div class="user-bike-image">
+          <div class="user-bike-image-container">
             <% if bike.bikeImg? %>
               <%= link_to image_tag(bike.bikeImg, class: "user-bike-image"), bike_path(bike) %>
             <% else %>
@@ -19,11 +21,12 @@
               <div class="stolen">STOLEN</div>
             <% elsif bike.for_sale == true %>
               <div class="for-sale">FOR SALE</div>
-              <div class="user-bike-index-content"><span>Price: </span><%= bike.price %></div>
+              <div class="user-bike-index-content"><span>Price: </span>$<%= bike.price %></div>
             <% end %>
           </div>
         </div>
       <% end %>
     <% end %>
+  <% end %>
   </div>
 </div>

@@ -6,15 +6,16 @@
 
 #show-bike-img-container {
   height: 300px;
-  margin-left: 10%;
-  margin-top: 5%;
   position: fixed;
+  left: 10%;
+  top: 15%;
 }
 
 #show-bike-details-container {
   margin-top: 6%;
-  padding-left: 4%;
-  margin-left: 54%;
+  padding-left: 2%;
+  margin-left: 56%;
+  width: 36%;
 }
 
 .bike-detail-label {
@@ -33,7 +34,7 @@
 
 .for-sale-label {
   color: green;
-  margin-bottom: 2px;
+  margin-bottom: 20px;
 }
 
 #bike-edit-form {

@@ -12,7 +12,8 @@
             <div class="index-content"><span>Make: </span><%= bike.make %></div>
             <div class="index-content"><span>Model: </span><%= bike.line %></div>
             <% if bike.price != nil %>
-              <div class="index-content"><span>Price: </span><%= bike.price %></div>
+              <div class="index-content"><span>Price: </span>$<%= bike.price %></div>
+              <div class="index-content"><%= bike.contactEmail %></div>
             <% end %>
           </div>
         </div>

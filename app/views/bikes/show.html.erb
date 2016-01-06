@@ -7,8 +7,10 @@
       <% else %>
         <%= image_tag(@bike.bikeImgURL, class: "show-bike-img") %>
       <% end %>
-      <% if @bike.user_id == current_user.id %>
-        <button id="show-edit" class="edit-bike-button">Edit Bike</button>
+      <% if user_signed_in? %>
+        <% if @bike.user_id == current_user.id %>
+          <button id="show-edit" class="edit-bike-button">Edit Bike</button>
+        <% end %>
       <% end %>
     </div>
     <div class="five columns" id="show-bike-details-container">

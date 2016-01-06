@@ -1,8 +1,9 @@
 $(function() {
 
 $('body').on('click', '#show-edit', function() {
-    $('#bike-edit-form').slideToggle("fast", "linear");
-    $('#bike-stats').slideToggle("fast", "linear"); 
+    $('#bike-edit-form').animate({height: "toggle"}, 500);
+    $('#bike-stats').slideToggle("slow", "linear");
+    $('#show-bike-img-container').slideToggle("slow", "linear");
   });
 
 $('body').on('click', '#show-proof-button', function() {

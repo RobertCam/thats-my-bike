@@ -8,8 +8,18 @@
 
 
 /*Sizing and alignment for Carousel content*/
-.user-bike-image {
+.user-bike-image-container {
   height: 100px;
+  width: 17%;
+  border-radius: 10px;
+  margin-left: 35.5%;
+  margin-top:-0.5%;
+}
+
+.user-bike-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 #owl-demo .item{
@@ -23,6 +33,7 @@
   border-radius: 3px;
   text-align: center;
   height: 150px;
+  overflow:auto;
 }
 
 #owl-demo .item img {
@@ -36,7 +47,7 @@
   width: 30%;
   text-align: left;
   position: absolute;
-  left: 50%;
+  left: 51.5%;
   top: 15%;
 }
 
