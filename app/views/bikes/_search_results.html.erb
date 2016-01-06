@@ -1,0 +1,25 @@
+<div class="for-sale-index-container">
+  <div class="row">
+  <% unless @searchBikes == nil || @searchBikes == "" %>
+    <% @searchBikes.each do |bike| %>
+      <div class="two columns">
+        <div class="index-card">
+          <% if bike.bikeImg? %>
+            <div class="index-img"><%= link_to image_tag(bike.bikeImg, class: "bike-index-img"), bike_path(bike) %></div>
+          <% else %>
+            <div class="index-img"><%= link_to image_tag(bike.bikeImgURL, class: "bike-index-img"), bike_path(bike) %></div>
+          <% end %>
+          <div class="index-content"><span>Make: </span><%= bike.make %></div>
+          <div class="index-content"><span>Model: </span><%= bike.line %></div>
+          <% if bike.stolen == true %>
+            <div class="stolen">STOLEN</div>
+          <% elsif bike.for_sale == true %>
+            <div class="for-sale">FOR SALE</div>
+            <div class="user-bike-index-content"><span>Price: </span><%= bike.price %></div>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+  </div>
+</div>

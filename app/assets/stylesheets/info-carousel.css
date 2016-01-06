@@ -1,12 +1,12 @@
 .info-carousel {
-  margin-left: 25%;
+  margin-left: 26%;
   margin-top: 2%;
   width: 50%;
 }
 
 .info-carousel-img {
   /*height: 100px;*/
-  width: 20%;
+  width: 12%;
   margin-bottom: 4%;
   padding-right: 20px;
 }
@@ -15,13 +15,39 @@
   display: inline-block;
   width: 42%;
   position: absolute;
+  top: 10px;
+  overflow:auto;
 }
 
 .info-content-broadcast {
   display: inline-block;
   width: 42%;
   position: absolute;
-  top: 29%;
+  top: 22%;
+}
+
+#log-it {
+  top: 25%;
+}
+
+#log-img {
+  margin-bottom: -2%;
+}
+
+#engrave-it {
+  top: 25%;
+}
+
+#engrave-img {
+  margin-bottom: -2%;
+}
+
+#report-it {
+  top: 21%;
+}
+
+#report-it-img {
+  margin-bottom: -4%;
 }
 
 .info-title {
@@ -35,11 +61,13 @@
   position:absolute;
 }
 
-#lock-it-vid {
-  position: absolute;
-  display: inline-block;
-  left: 41%;
+#shield-lock-img {
+  margin-bottom: -10%;
+}
 
+#lock-it-vid {
+  margin-left: 41%;
+  height: 123px;
 }
 
 a {

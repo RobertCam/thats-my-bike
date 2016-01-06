@@ -4,6 +4,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @user_bikes = Bike.where(user_id: current_user.id)
+    @bikeNew = Bike.new
   end
 
   def update

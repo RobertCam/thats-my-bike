@@ -24,6 +24,7 @@ $(function() {
     $('#index-button-container').hide("fast", "linear");
     $('#for-sale-bike-index').hide("slow", "linear");
     $('#new-bike-form-index').hide("slow", "linear");
+    $('#search-results-container').hide("slow", "linear");
   });
 
   $('body').on('click', '#for-sale-index-button-nav', function() {
@@ -31,6 +32,7 @@ $(function() {
     $('#index-button-container').hide("fast", "linear");
     $('#stolen-bikes-index').hide("slow", "linear");
     $('#new-bike-form-index').hide("slow", "linear");
+    $('#search-results-container').hide("slow", "linear");
   });
 
 
