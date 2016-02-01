@@ -19,14 +19,14 @@
   <div class="row">
     <% if @bike.componentImgs? %>
       <div class="five columns">
-        <div class="component-image-container"><%= image_tag(@bike.componentImgs, class: "component-img") %></div>
+        <div class="component-image-container expanded"><%= image_tag(@bike.componentImgs, class: "component-img") %></div>
       </div>
     <% end %>
 
     <!-- show proof of purchase if present -->
     <% if @bike.proofOfPurchase? %>
       <div class="five columns">
-        <div class="proof-image-container"><%= image_tag(@bike.proofOfPurchase, class: "proof-img") %></div>
+        <div class="proof-image-container expanded"><%= image_tag(@bike.proofOfPurchase, class: "proof-img") %></div>
       </div>
     <% end %>
   </div>

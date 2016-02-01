@@ -12,9 +12,11 @@
             <div class="index-content"><span class="bike-detail-label">Make: </span><%= bike.make %></div>
             <div class="index-content"><span class="bike-detail-label">Model: </span><%= bike.line %></div>
             <% if bike.price != nil %>
+              <div class="for-sale">FOR SALE</div>
               <div class="index-content"><span class="bike-detail-label">Price: </span>$<%= bike.price %></div>
-              <div class="index-content"><%= bike.contactEmail %></div>
+              <div class="index-content"><span class="bike-detail-label">Email: </span><%= bike.contactEmail %></div>
             <% end %>
+              <div class="index-content"><span class="bike-detail-label">Serial Num: </span><%= bike.serialNum %></div>
           </div>
         </div>
       <% end %>

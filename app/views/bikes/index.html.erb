@@ -1,5 +1,8 @@
 <%= render "layouts/site_nav" %>
 <%= render "search" %>
+<div id="flash-index">
+  <% render "layouts/flashes" %>
+</div>
 
 <div class="bike-index-top-content">
   <% if @searchBikes != nil || @searchBikes == "" %>

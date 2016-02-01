@@ -26,6 +26,8 @@
   height: 130%;
   width: 100%;
   background-color: rgba(243, 244, 246, 0.35);
+  background-attachment: fixed;
+  overflow: auto;
 }
 
 .landin-content {
@@ -96,5 +98,43 @@
 }
 
 #new-bike {
-  background-color: none !important;
+  background-color: rgba(225, 225, 225, 0.35);
 }
+
+#new-bike:hover {
+  color: black;
+}
+
+#login {
+  background-color: rgba(225, 225, 225, 0.35);
+  color: white;
+}
+
+#login:hover {
+  color: black;
+}
+
+#sign-up {
+  background-color: rgba(225, 225, 225, 0.35);
+}
+
+#check-out-bikes {
+  background-color: rgba(225, 225, 225, 0.35);
+}
+
+@media handheld, screen and (max-width: 640px) { 
+  .hidden-form {
+    position: absolute;
+    top: 56%;
+    left: 18%;
+    overflow: auto;
+    background-attachment: scroll;
+  }
+  .landing-overlay {
+    height: 200%;
+  }
+  .landing-content {
+    position: relative;
+  }
+}
+

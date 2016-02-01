@@ -1,9 +1,15 @@
 .stolen {
   color: red;
+  font-size: 2em;
+  /*text-align: center;*/
+  margin-top: 2px;
 }
 
 .for-sale {
   color: green;
+  font-size: 2em;
+  /*text-align: center;*/
+  margin-top: 2px;
 }
 
 
