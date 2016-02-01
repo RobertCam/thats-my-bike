@@ -4,20 +4,22 @@
       <% if user_signed_in? %>
         <div id="new-bike-index-nav" class="dropdown-item">Register Bike</div>
       <% end %>
-      <div class="dropdown-item"><%= link_to('Bike Index', bikes_path) %></div>
+      <div class="dropdown-item nav2"><%= link_to('Bike Index', bikes_path) %></div>
       <% if user_signed_in? %>
-        <div class="dropdown-item"><%= link_to('Profile', user_path(current_user)) %></div>
+        <div class="dropdown-item nav2"><%= link_to('Profile', user_path(current_user)) %></div>
       <% else %>
-        <div class="dropdown-item" id="login-nav">Login</div>  
+        <div class="dropdown-item nav2" id="login-nav">Login</div>  
+        <div class="dropdown-item nav2"><%= link_to('Sign-Up', root_path) %></div>
       <% end %>
-      <div class="dropdown-item"><%= link_to('Info', info_index_path) %></div>
+      <!-- space for info page link when that is up and ready -->
       <% if user_signed_in? %>
-        <div class="dropdown-item"><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></div>       
+        <div class="dropdown-item nav2"><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></div>       
       <% end %>
     </div>
 </nav>
 
 <% if user_signed_in? %>
+  <% @bikeNew = Bike.new %>
   <div id="new-bike-form-index-nav" class="hidden-form">
     <%= form_for @bikeNew do |f| %>
       <% if @bikeNew.errors.any? %>
@@ -46,7 +48,7 @@
         <div class="three columns">
           <div class="field">
             <%= f.label :serialNum, "Serial Number" %><br />
-            <%= f.number_field :serialNum, class: "serial-num-input" %>
+            <%= f.text_field :serialNum, class: "serial-num-input" %>
           </div>
         </div>
       </div>

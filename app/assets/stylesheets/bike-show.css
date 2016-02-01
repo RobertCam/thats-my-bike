@@ -1,3 +1,9 @@
+#flash-show {
+  position: fixed;
+  top: 5%;
+  left: 47%;
+}
+
 .show-bike-img {
   width: 100%;
   height: auto;
@@ -8,11 +14,11 @@
   height: 300px;
   position: fixed;
   left: 10%;
-  top: 15%;
+  top: 20%;
 }
 
 #show-bike-details-container {
-  margin-top: 6%;
+  margin-top: 9%;
   padding-left: 2%;
   margin-left: 56%;
   width: 36%;
@@ -23,7 +29,7 @@
 }
 
 .edit-bike-button {
-  margin-left: 38%;
+  margin-left: 23%;
   margin-top: 2%;
 }
 
@@ -39,8 +45,9 @@
 
 #bike-edit-form {
   display: none;
-  margin-left: 12%;
-  margin-top: 5%;
+  margin-left: 20%;
+  margin-top: 8%;
+  width: 80%;
 }
 
 #show-edit {
@@ -118,10 +125,74 @@
   border-radius: 10px;
 }
 
+#delete-bike a {
+  color: #DB1E1E;
+}
 
-
-
-
+@media handheld, screen and (max-width: 640px) { 
+  #show-bike-img-container {
+    position: relative;
+    display: block;
+    padding-bottom: 0%;
+    width: 80%;
+    margin-left: 0%;
+    margin-top: 25%;
+    height: auto;
+  }
+  #show-bike-details-container {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-left: 5%;
+    text-align: left;
+  }
+  .component-image-container {
+    width: 30%;
+    position: absolute;
+    height: 80px;
+    left: 13.5%;
+    display: inline-block;
+    display: none;
+  }
+  .proof-image-container {
+    width: 30%;
+    height: 80px;
+    position: absolute;
+    left: 42.5%;
+    display: inline-block;
+    display: none;
+  }
+  .show-button {
+    width: 30%;
+  }
+  .edit-bike-button {
+    margin-left: 5%;
+  }
+  #delete-bike {
+    display: inline;
+    width: 44%;
+    padding: 0;
+  }
+  #navbox {
+    /*position: absolute;*/
+    top: 3% !important;
+    z-index: 10;
+  }
+  #dropdown {
+    position: absolute;
+    z-index: 9;
+    margin-top: 4%;
+  }
+  #bike-edit-form {
+    margin-top: 30%;
+  }
+  #form-push-right-bike-img {
+    margin-left: 0% !important;
+  }
+  #form-push-right-for-sale {
+    margin-left: 0% !important;
+  }
+}
 
 
 

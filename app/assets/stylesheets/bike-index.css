@@ -1,8 +1,22 @@
+#flash-index {
+  position: fixed;
+  top: 18%;
+  left: 47%;
+  font-height: 1em;
+}
+
 .bike-index-top-content {
   max-height: 505px;
+  height: 505px;
   overflow: auto;
   margin-top: -2%;
   padding-top: 2%;
+  background: url("bikelanes.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: scroll;
 }
 
 .index-footer {
@@ -27,18 +41,21 @@
   position: absolute;
   left: 28%;
   top: 37%;
+  background-color: white !important;
 }
 
 .for-sale-index-button {
   position: absolute;
   left: 62%;
   top: 37%;
+  background-color: white !important;
 }
 
 .index-button {
   position: fixed;
   top: 6%;
   right: 2.5%;
+  background-color: white !important;
 }
 
 .for-sale-index-container {
@@ -46,13 +63,15 @@
   padding: 20px;
   width: 80%;
   position: relative;
-  left: 10%;
+  left: 8%;
   top: 6%;
 }
 
 .bike-index-img {
   width: 100%;
   height: auto;
+  max-height: 90px;
+  min-height: 90px;
   padding: 0px;
   border-bottom: solid 1px black;
 }
@@ -65,10 +84,15 @@
 
 .index-card {
   border: solid 1px black;
-  padding: 12px;
+  padding: 10px;
   font-size: 0.8em;
   margin-bottom: 10%;
-  height: 180px;
+  min-height: 188px;
+  max-height: 188px;
+  background-color: white;
+  overflow: auto;
+  width: 100%;
+
 }
 
 .index-content {
@@ -93,7 +117,75 @@
   background-color: white;
 }
 
-
+@media handheld, screen and (max-width: 640px) { 
+  .bike-index-img {
+    width: 100%;
+    max-height: none;
+  }
+  .for-sale-index-container {
+    margin: 0%;
+    padding: 0%;
+    margin-top: 32%;
+  }
+  .index-card {
+    width: 90%;
+  }
+  .index-button {
+    width: 33%;
+    position: fixed;
+    right: 32%;
+    top: 5.5%;
+    padding: 0 !important;
+  }
+  #search-button {
+    width: 60%;
+    padding: 0 !important;
+  }
+  #search-form-container {
+    margin-left: 44%;
+  }
+  #search-field {
+    width: 60%;
+  }
+  .bike-index-top-content {
+    margin-top: -10%;
+    height: auto;
+    background: none;
+  }
+  .stolen-index-button {
+    position: absolute;
+    left: 7%;
+    top: 37%;
+    /*width: 30%;*/
+  }
+  .for-sale-index-button {
+    position: absolute;
+    left: 54%;
+    top: 37%;
+    /*width: 30%;*/
+  }
+  .index-footer {
+    height: 140px;
+  }
+  .owl-wrapper-outer {
+    height: 95px;
+  }
+  .owl-item {
+    height: 95px;
+    overflow: auto;
+  }
+  .dropdown-item {
+    color: black;
+    padding-left: 5px;
+    background-color: rgba(175, 175, 175, 0.55);
+  }
+  .dropdown-item a {
+    color: black !important;
+  }
+  .dropdown-item:hover {
+    background-color: rgba(225, 225, 225, 0.35);
+  }
+}
 
 
 

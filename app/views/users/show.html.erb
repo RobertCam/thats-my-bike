@@ -1,10 +1,9 @@
-
 <div class="profile-content">
+<%= render 'layouts/nav2' %>
   <div class="profile-img-container">
     <%= image_tag(@user.profileImg, class: "profile-img") %>
   </div>
   <div class="profile-right-content">
-    <%= render 'layouts/nav2' %>
     <div id="user-stats">
       <h4 class="username"><%= @user.username %></h4>
       <h6 class="user-info"><%= @user.firstName %> <%= @user.lastName %></h6>

@@ -24,15 +24,11 @@ body {
 }
 
 .alerts {
-  position: fixed;
-  top: 5%;
-  left: 5%;
-  color: red;
+  color: #DB1E1E;
+  z-index: 1000;
 }
 
 .notices {
-  position: fixed;
-  top: 5%;
-  left: 5%;
-  color: green;
+  color: #31CE0F;
+  z-index: 1001;
 }

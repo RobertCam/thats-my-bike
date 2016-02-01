@@ -11,12 +11,14 @@
           <% end %>
           <div class="index-content"><span>Make: </span><%= bike.make %></div>
           <div class="index-content"><span>Model: </span><%= bike.line %></div>
+          <div class="index-content"><span class="bike-detail-label">Serial Num: </span><%= bike.serialNum %></div>
           <% if bike.stolen == true %>
             <div class="stolen">STOLEN</div>
           <% elsif bike.for_sale == true %>
             <div class="for-sale">FOR SALE</div>
-            <div class="user-bike-index-content"><span>Price: </span><%= bike.price %></div>
+            <div class="user-bike-index-content"><span>Price: $</span><%= bike.price %></div>
           <% end %>
+          <div class="index-content"><span class="bike-detail-label">Email: </span><%= bike.contactEmail %></div>
         </div>
       </div>
     <% end %>
