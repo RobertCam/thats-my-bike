@@ -36,5 +36,24 @@ $(function() {
   });
 
 
+// show and hide info footer
+  $('body').on('click', '#hide-footer', function() {
+    $('.user-bikes-container').slideToggle("slow");
+    $('.index-footer').slideToggle("slow");
+    $('#show-footer').fadeToggle('slow');
+    $('#hide-footer').fadeToggle('slow');
+    $('.card-container').toggleClass("card-container-full", "linear");
+  });
+
+  $('body').on('click', '#show-footer', function() {
+    $('.user-bikes-container').slideToggle("slow", "linear");
+    $('.index-footer').slideToggle("slow")
+    $('#hide-footer').fadeToggle('slow');
+    $('#show-footer').fadeToggle('slow');
+    $('.card-container').toggleClass("card-container-full", "linear");
+  });
+
+
+
 
 });

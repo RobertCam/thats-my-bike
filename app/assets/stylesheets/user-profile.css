@@ -6,12 +6,12 @@
 }
 
 .profile-img-container {
-  max-height: 300px;
+  max-height: 275px;
   width:30%;
   display: inline-block;
   position: absolute;
-  left: 23%;
-  top: 11%;
+  left: 21%;
+  top: 10%;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -28,7 +28,7 @@
 .profile-right-content {
   display: inline-block;
   position: absolute;
-  top: 15%;
+  top: 11%;
   left: 63%;
 }
 

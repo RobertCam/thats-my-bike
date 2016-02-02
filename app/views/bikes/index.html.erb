@@ -5,24 +5,28 @@
 </div>
 
 <div class="bike-index-top-content">
-  <% if @searchBikes != nil || @searchBikes == "" %>
-    <div id="search-results-container">
-      <%= render "search_results" %>
+  <div class="card-container">
+    <% if @searchBikes != nil || @searchBikes == "" %>
+      <div id="search-results-container">
+        <%= render "search_results" %>
+      </div>
+    <% else %>
+      <div id="index-button-container">
+        <button id="stolen-index-button" class="button stolen-index-button">Stolen</button> 
+        <button id="for-sale-index-button" class="button for-sale-index-button">For Sale</button> 
+      </div>
+    <% end %>
+    <div id="for-sale-bike-index">
+      <%= render 'for_sale_index' %>
+      <%= paginate @forSaleBikes %>
     </div>
-  <% else %>
-    <div id="index-button-container">
-      <button id="stolen-index-button" class="button stolen-index-button">Stolen</button> 
-      <button id="for-sale-index-button" class="button for-sale-index-button">For Sale</button> 
+    <div id="stolen-bikes-index">
+      <%= render 'stolen_index' %>
+      <%= paginate @stolenBikes %>
     </div>
-  <% end %>
-  <div id="for-sale-bike-index">
-    <%= render 'for_sale_index' %>
-  </div>
-  <div id="stolen-bikes-index">
-    <%= render 'stolen_index' %>
   </div>
 </div>
+<div class="hideShow-button" id="show-footer">Show Info</div>
 <div class="index-footer">
     <%= render "info" %>
 </div>
-

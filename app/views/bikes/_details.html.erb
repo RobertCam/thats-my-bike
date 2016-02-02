@@ -2,7 +2,7 @@
   <h6><span class="bike-detail-label">Type: </span><%= @bike.category %> | <span class="bike-detail-label">Serial Number: </span><%= @bike.serialNum %></h6>
   <h6><span class="bike-detail-label">Description: </span><%= simple_format(@bike.description) %></h6>
   <h6><span class="bike-detail-label">Colour: </span><%= @bike.color %></h6>
-  <% if @bike.components == nil %>
+  <% if @bike.components == nil || "" %>
     <h6><span class="bike-detail-label">Custom Components: </span>None</h6>
   <% else %>
     <h6 class="components-label"><span class="bike-detail-label">Custom Components: </span></h6>

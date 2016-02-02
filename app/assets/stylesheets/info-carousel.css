@@ -1,3 +1,7 @@
+.owl-item {
+  /*overflow: auto;*/
+}
+
 .info-carousel {
   margin-left: 26%;
   margin-top: 2%;
@@ -16,7 +20,7 @@
   width: 42%;
   position: absolute;
   top: 10px;
-  overflow:auto;
+  /*overflow: auto;*/
 }
 
 .info-content-broadcast {
@@ -50,6 +54,10 @@
   margin-bottom: -4%;
 }
 
+#look-for-it {
+  overflow: auto;
+}
+
 .info-title {
   font-weight: bold;
   font-size: 1.1em;
@@ -72,4 +80,18 @@
 
 a {
   text-decoration: none;
+}
+
+#show-footer {
+  display: none;
+  position: fixed;
+  bottom: 1%;
+  left: 1%;
+  color: white;
+}
+
+.hideShow-button {
+  margin-left: 1%;
+  text-decoration: underline;
+  cursor: pointer;
 }
