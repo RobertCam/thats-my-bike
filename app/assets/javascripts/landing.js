@@ -18,5 +18,10 @@ $('body').on('click', '#new-bike', function() {
     $('#sign-up-form').hide("slow", "linear");
   });
 
+$('body').on('click', '#hide-new-bike', function() {
+    $('#new-bike-form').fadeToggle("slow", "linear");
+    $('#login-form').hide("slow", "linear");
+    $('#sign-up-form').hide("slow", "linear");
+  });
 
 });

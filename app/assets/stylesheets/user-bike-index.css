@@ -88,3 +88,20 @@
 .owl-pagination {
   text-align: center;
 }
+
+@media handheld, screen and (max-width: 640px) { 
+  .user-bike-image-container {
+    width: 35%;
+    position: absolute;
+    left: 0%;
+    top: 19.5%;
+  }
+  .owl-pagination {
+    display: none;
+  }
+  .user-bike-index-info {
+    width: 50%;
+    left: 27.5%;
+    top: 100%;
+  }
+}

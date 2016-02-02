@@ -63,6 +63,11 @@
   margin-left: 20%;
 }
 
+#sign-up-form {
+  position: fixed;
+  top: 18%;
+}
+
 .hidden-form {
   display: none;
   position: absolute;
@@ -71,18 +76,26 @@
   width: 71%;
 }
 
+#new-bike-form {
+  margin-top: -5%;
+}
+
 #user_age {
   width: 60px;
+}
+
+.remember-me {
+  display: inline !important;
 }
 
 .new-bike-form {
   overflow: auto;
 }
 
-#register-bike-button-landing {
-  margin-left: 21%;
-  padding-top: 30px;
-  color: white;
+.register-bike-button-landing {
+  margin-left: 18%;
+  margin-top: 15px;
+  background-color: white !important;
 }
 
 .checkbox label {
@@ -114,6 +127,11 @@
   color: black;
 }
 
+.submit-button {
+  background-color: white !important;
+  margin-top: 10px;
+}
+
 #sign-up {
   background-color: rgba(225, 225, 225, 0.35);
 }
@@ -122,19 +140,34 @@
   background-color: rgba(225, 225, 225, 0.35);
 }
 
+#hide-new-bike {
+  color: white;
+}
+
 @media handheld, screen and (max-width: 640px) { 
   .hidden-form {
     position: absolute;
-    top: 56%;
-    left: 18%;
+    top: 17%;
+    left: 13%;
     overflow: auto;
     background-attachment: scroll;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 10px;
   }
   .landing-overlay {
     height: 200%;
   }
   .landing-content {
     position: relative;
+  }
+  #sign-up-form {
+    position: relative;
+    top: 8.5%;
+  }
+  .login-form {
+    margin-left: 0%;
   }
 }
 

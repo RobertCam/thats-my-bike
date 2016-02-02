@@ -47,16 +47,6 @@
   cursor: pointer;
 }
 
-#new-bike-form-index {
-  position: absolute;
-  top: 8%;
-  left: 20%;
-  width: 70%;
-  height: 425px;
-  overflow: auto;
-  background-color: white;
-}
-
 #new-bike-form-index-nav {
   position: absolute;
   top: 8%;
@@ -86,11 +76,6 @@
 
 #bike_componentImgs {
   display: inline-block;
-}
-
-#register-bike-button {
-  margin-top: 3%;
-  margin-left: 4%;
 }
 
 #login-form-nav {

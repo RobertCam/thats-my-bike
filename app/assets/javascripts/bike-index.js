@@ -43,6 +43,7 @@ $(function() {
     $('#show-footer').fadeToggle('slow');
     $('#hide-footer').fadeToggle('slow');
     $('.card-container').toggleClass("card-container-full", "linear");
+    $('#new-bike-form-index').toggleClass("new-bike-index-full", "linear");
   });
 
   $('body').on('click', '#show-footer', function() {
@@ -51,6 +52,7 @@ $(function() {
     $('#hide-footer').fadeToggle('slow');
     $('#show-footer').fadeToggle('slow');
     $('.card-container').toggleClass("card-container-full", "linear");
+    $('#new-bike-form-index').toggleClass("new-bike-index-full", "linear");
   });
 
 
