@@ -12,6 +12,11 @@
   margin-top: 2px;
 }
 
+.for-sale-carousel {
+  color: green;
+  font-weight: bold;
+}
+
 
 /*Sizing and alignment for Carousel content*/
 .user-bike-image-container {

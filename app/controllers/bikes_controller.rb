@@ -16,8 +16,8 @@ class BikesController < ApplicationController
 
   def index 
     @searchBikes = Bike.search(params[:query])
-    @stolenBikes = Bike.where(stolen: true)
-    @forSaleBikes = Bike.where(for_sale: true)
+    @stolenBikes = Bike.where(stolen: true).page(params[:page]).per(10)
+    @forSaleBikes = Bike.where(for_sale: true).page(params[:page]).per(10)
   end
 
   def show 
