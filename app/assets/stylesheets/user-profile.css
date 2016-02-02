@@ -60,18 +60,39 @@
 
 @media handheld, screen and (max-width: 640px) { 
   .profile-img-container {
-    left: 5%;
-    top: 22%;
-    width: 50%;
+    left: 18%;
+    top: 16%;
+    width: 64%;
   }
   .profile-content {
-    overflow: scroll;
-    height: 300px;
-    margin-bottom: 20%;
+    overflow: auto;
+    height: 400px;
+    margin-top: -12%;
   }
   #user-edit-form {
     height: 300px;
     overflow: scroll;
+    width: 80%;
+  }
+  .profile-right-content {
+    top: 80%;
+    left: 18%;
+    width: 100%;
+  }
+  .user-info {
+    margin-bottom: 5px;
+  }
+  .username {
+    margin-bottom: 5px;
+  }
+  .hide-profile {
+    display: none;
+  }
+  .profile-full {
+    margin-top: 0%;
+  }
+  #new-bike-form-index-nav {
+    overflow: auto;    
   }
 }
 

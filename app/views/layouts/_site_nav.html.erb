@@ -4,14 +4,13 @@
       <% if user_signed_in? %>
         <div id="new-bike-index" class="dropdown-item">Register Bike</div>
       <% end %>
-      <div id="stolen-index-button-nav" class="dropdown-item">Stolen Bikes</div>
-      <div id="for-sale-index-button-nav" class="dropdown-item">Bikes For Sale</div>
+      <!-- <div id="stolen-index-button-nav" class="dropdown-item">Stolen Bikes</div>
+      <div id="for-sale-index-button-nav" class="dropdown-item">Bikes For Sale</div> -->
       <% if user_signed_in? %>
         <div class="dropdown-item"><%= link_to('Profile', user_path(current_user)) %></div>
       <% else %>
         <div class="dropdown-item" id="login-nav">Login</div>  
       <% end %>
-      <div class="dropdown-item"><%= link_to('Info', info_index_path) %></div>
       <% if user_signed_in? %>
         <div class="dropdown-item"><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></div>       
       <% end %>
