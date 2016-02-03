@@ -9,7 +9,8 @@
       <% if user_signed_in? %>
         <div class="dropdown-item"><%= link_to('Profile/My Bikes', user_path(current_user)) %></div>
       <% else %>
-        <div class="dropdown-item" id="login-nav">Login</div>  
+        <div class="dropdown-item" id="login-nav">Login</div>
+        <div class="dropdown-item"><%= link_to('Sign-Up', root_path) %></div>  
       <% end %>
       <% if user_signed_in? %>
         <div class="dropdown-item"><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></div>       
