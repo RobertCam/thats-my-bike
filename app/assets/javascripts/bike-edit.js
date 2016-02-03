@@ -16,4 +16,8 @@ $('body').on('click', '#show-component-images-button', function() {
     $('.component-image-container').slideToggle("fast", "linear");
   });
 
+
+$( document ).tooltip();
+  
+
 });

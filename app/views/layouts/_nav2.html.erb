@@ -6,7 +6,7 @@
       <% end %>
       <div class="dropdown-item nav2"><%= link_to('Bike Index', bikes_path) %></div>
       <% if user_signed_in? %>
-        <div class="dropdown-item nav2"><%= link_to('Profile', user_path(current_user)) %></div>
+        <div class="dropdown-item nav2"><%= link_to('Profile/ My Bikes', user_path(current_user)) %></div>
       <% else %>
         <div class="dropdown-item nav2" id="login-nav">Login</div>  
         <div class="dropdown-item nav2"><%= link_to('Sign-Up', root_path) %></div>
@@ -53,7 +53,7 @@
         </div>
         <div class="three columns">
           <%= f.label :bikeImgURL, "Image URL" %>
-          <%= f.text_field :bikeImgURL %>
+          <%= f.text_field :bikeImgURL, title: "copy and paste an image from the web (this is a default)" %>
         </div>
         <div class="three columns">
           <%= f.label :color, "Color" %>

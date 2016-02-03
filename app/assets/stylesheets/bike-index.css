@@ -11,7 +11,7 @@
   overflow: auto;
   margin-top: -2%;
   padding-top: 2%;
-  background: url("bikelanes.jpg") no-repeat center center fixed; 
+  background: url("https://s3-us-west-2.amazonaws.com/bike-reg-sample-images/bikelanes.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -135,13 +135,17 @@
 #new-bike-form-index {
   position: absolute;
   top: 8%;
-  left: 20%;
-  width: 70%;
+  left: 22%;
+  width: 60%;
   height: 400px;
   overflow: auto;
   background-color: rgba(0,0,0,0.5);
   padding-top: 20px;
   border-radius: 10px;
+}
+
+#new_bike {
+  width: 122%;
 }
 
 #new-bike-form-index label {
@@ -161,6 +165,7 @@
 .push-down {
   margin-top: 10px;
 }
+
 
 @media handheld, screen and (max-width: 640px) { 
   .bike-index-img {
@@ -226,15 +231,17 @@
     overflow: auto;
   }
   .dropdown-item {
-    color: black;
     padding-left: 5px;
-    background-color: rgba(175, 175, 175, 0.55);
+    background-color: rgba(0, 0, 0, 0.83);
   }
   .dropdown-item a {
-    color: black !important;
+    
   }
   .dropdown-item:hover {
-    background-color: rgba(225, 225, 225, 0.35);
+    background-color: rgba(175, 175, 175, 0.55);
+  }
+  #new-bike-form-index {
+    width: 72%;
   }
 }
 

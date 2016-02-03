@@ -1,7 +1,11 @@
 <div class="profile-content">
 <%= render 'layouts/nav2' %>
   <div class="profile-img-container">
-    <%= image_tag(@user.profileImg, class: "profile-img") %>
+    <% if @user.profileImg? %>
+      <%= image_tag(@user.profileImg, class: "profile-img") %>
+    <% else %>
+      <%= image_tag(@user.profileImgURL, class: "profile-img") %>
+    <% end %>
   </div>
   <div class="profile-right-content">
     <div id="user-stats">

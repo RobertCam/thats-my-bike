@@ -1,4 +1,4 @@
-<div class="user-bikes-container">
+<div class="user-bikes-container" title="Your registered bikes!">
   <div id="owl-demo" class="owl-carousel owl-theme">
   <% if user_signed_in? %>
     <% @user_bikes = Bike.where(user_id: current_user.id) %>

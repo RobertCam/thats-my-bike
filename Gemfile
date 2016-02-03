@@ -52,5 +52,6 @@ gem 'skeleton-rails'
 gem 'devise', '~> 3.4.0'
 gem 'owlcarousel-rails'
 gem 'jquery-turbolinks'
+gem 'jquery-ui-rails'
 gem 'kaminari'
 

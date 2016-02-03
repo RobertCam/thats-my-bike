@@ -16,7 +16,7 @@
   /*negative top margin to center background. see landing content to adjust child elements*/
   margin-top: -20%;
   position: relative;
-  background-image: url("bike-gif.gif");
+  background-image: url("https://s3-us-west-2.amazonaws.com/bike-reg-sample-images/bike-gif.gif");
   background-repeat: no-repeat;
   background-size: 120% 100%;
   overflow: auto;
