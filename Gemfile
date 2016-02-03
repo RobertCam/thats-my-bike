@@ -29,7 +29,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Unicorn as the app server
 # gem 'unicorn'
-
+gem 'thin'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -46,6 +46,7 @@ group :development do
   gem 'spring'
 end
 
+gem "heroku"
 gem 'carrierwave', github:'carrierwaveuploader/carrierwave'
 gem 'rmagick', '~> 2.15', '>= 2.15.4'
 gem 'skeleton-rails'
