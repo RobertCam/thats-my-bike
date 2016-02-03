@@ -87,8 +87,9 @@
 
 #login-form-nav-index {
   display: none;
-  margin-left: 45%;
-  margin-top: 5%;
+  margin-left: -14%;
+  margin-top: -12%;
+  color: white;
 }
 
 #new-bike-index-nav {
@@ -99,7 +100,7 @@
   color: #C0C0C0;
 }
 
-#login-nav {
+.nav2#login-nav {
   color: black;
 }
 

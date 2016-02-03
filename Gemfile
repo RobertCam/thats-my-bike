@@ -46,7 +46,7 @@ group :development do
   gem 'spring'
 end
 
-gem "heroku"
+
 gem 'carrierwave', github:'carrierwaveuploader/carrierwave'
 gem 'rmagick', '~> 2.15', '>= 2.15.4'
 gem 'skeleton-rails'
