@@ -16,6 +16,7 @@
  *= require skeleton
  *= require owl.carousel
  *= require owl.theme
+  *= require jquery-ui/tooltip
  */
 body {
   margin: 0;
@@ -26,9 +27,31 @@ body {
 .alerts {
   color: #DB1E1E;
   z-index: 1000;
+  position: fixed;
+  top: 8%;
+  left: 40.5%;
+  font-size: 1.5em;
+  background-color: rgba(0,0,0,0.5);
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
 }
 
 .notices {
   color: #31CE0F;
   z-index: 1001;
+  position: fixed;
+  top: 8%;
+  left: 40.5%;
+  font-size: 1.5em;
+  background-color: rgba(0,0,0,0.5);
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+}
+
+/*tooltip styling*/
+title {
+  font-size: 1em;
+  line-height: 0.5em;
 }

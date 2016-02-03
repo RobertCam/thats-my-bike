@@ -18,7 +18,7 @@
   position: fixed;
   top: 14%;
   left: 3%;
-  width: 100px;
+  width: 120px;
   padding: 0;
   border-radius: 0 0 .2em .2em;
   color: white;
@@ -54,6 +54,7 @@
   width: 70%;
   overflow: auto;
   background-color: white;
+  height: 80%;
 }
 
 #form-push-right-bike-img {
@@ -86,8 +87,9 @@
 
 #login-form-nav-index {
   display: none;
-  margin-left: 45%;
-  margin-top: 5%;
+  margin-left: -14%;
+  margin-top: -12%;
+  color: white;
 }
 
 #new-bike-index-nav {
@@ -98,10 +100,31 @@
   color: #C0C0C0;
 }
 
-#login-nav {
+.nav2#login-nav {
   color: black;
 }
 
 #login-nav:hover {
   color: #C0C0C0;
+}
+
+@media handheld, screen and (max-width: 640px) { 
+  #login-form-nav-index {
+    margin-left: 7%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.83);
+    color: white;
+  }
+  #login-form-nav-index input {
+    color: black;
+  }
+  #login-nav {
+    color: white !important;
+  }
+  .dropdown-item.nav2 a {
+  color: white;
+  }
+  #new-bike-index-nav {
+  color: white;
+  }
 }

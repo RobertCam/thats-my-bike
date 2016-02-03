@@ -4,6 +4,8 @@ $('body').on('click', '#show-edit', function() {
     $('#bike-edit-form').animate({height: "toggle"}, 500);
     $('#bike-stats').slideToggle("slow", "linear");
     $('#show-bike-img-container').slideToggle("slow", "linear");
+     $('.alerts').hide("slow");
+    $('.notices').hide("slow");
   });
 
 $('body').on('click', '#show-proof-button', function() {
@@ -13,5 +15,9 @@ $('body').on('click', '#show-proof-button', function() {
 $('body').on('click', '#show-component-images-button', function() {
     $('.component-image-container').slideToggle("fast", "linear");
   });
+
+
+$( document ).tooltip();
+  
 
 });

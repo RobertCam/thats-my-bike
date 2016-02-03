@@ -4,3 +4,6 @@
 <% if flash[:notice] %>
   <div class="notices"><%= flash[:notice] %></div>
 <% end %>
+<% if flash[:error] %>
+  <div class="alerts"><%= flash[:error] %></div>
+<% end %>

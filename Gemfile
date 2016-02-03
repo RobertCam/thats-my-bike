@@ -4,8 +4,8 @@ ruby "2.2.4"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# Use postgres as the database for Active Record
+gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -29,7 +29,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Unicorn as the app server
 # gem 'unicorn'
-
+gem 'puma'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -46,11 +46,13 @@ group :development do
   gem 'spring'
 end
 
+
 gem 'carrierwave', github:'carrierwaveuploader/carrierwave'
 gem 'rmagick', '~> 2.15', '>= 2.15.4'
 gem 'skeleton-rails'
 gem 'devise', '~> 3.4.0'
 gem 'owlcarousel-rails'
 gem 'jquery-turbolinks'
+gem 'jquery-ui-rails'
 gem 'kaminari'
 

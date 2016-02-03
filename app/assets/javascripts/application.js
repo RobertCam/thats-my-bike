@@ -20,3 +20,4 @@
 //= require profile
 //= require drop-nav
 //= require turbolinks
+//= require jquery-ui/tooltip

@@ -6,7 +6,7 @@
       <% end %>
       <div class="dropdown-item nav2"><%= link_to('Bike Index', bikes_path) %></div>
       <% if user_signed_in? %>
-        <div class="dropdown-item nav2"><%= link_to('Profile', user_path(current_user)) %></div>
+        <div class="dropdown-item nav2"><%= link_to('Profile/ My Bikes', user_path(current_user)) %></div>
       <% else %>
         <div class="dropdown-item nav2" id="login-nav">Login</div>  
         <div class="dropdown-item nav2"><%= link_to('Sign-Up', root_path) %></div>
@@ -34,68 +34,16 @@
       <% end %>       
       <div class="row">
         <div class="three columns">
-          <div class="field">
-            <%= f.label :make %><br />
-            <%= f.text_field :make, placeholder: "make" %>
-          </div>
+          <%= f.label :make %>
+          <%= f.text_field :make, required: true %>
         </div>
         <div class="three columns">
-          <div class="field">
-            <%= f.label :line %><br />
-            <%= f.text_field :line %>
-          </div>
+          <%= f.label :line %>
+          <%= f.text_field :line, required: true %>
         </div>
         <div class="three columns">
-          <div class="field">
-            <%= f.label :serialNum, "Serial Number" %><br />
-            <%= f.text_field :serialNum, class: "serial-num-input" %>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="three columns">
-          <div class="field">
-            <%= f.label :proofOfPurchase, "Proof Of Purchase" %><br />
-            <%= f.file_field :proofOfPurchase %>
-          </div>
-        </div>
-        <div class="three columns">
-          <div class="field">
-            <%= f.label :color, "Color" %><br />
-            <%= f.text_field :color %>
-          </div>
-        </div>
-        <div class="three columns">
-          <div class="field">
-            <%= f.label :category, "Category" %><br />
-            <%= f.text_field :category %>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="one column">
-           <div class="field">
-            <%= f.label :stolen %>
-            <%= f.check_box :stolen, class: "check-up" %>
-          </div>
-        </div>
-        <div id="form-push-right-for-sale" class="one column">
-           <div class="field">
-            <%= f.label :for_sale, "Sell It" %>
-            <%= f.check_box :for_sale, class: "check-up", id: "for-sale-form" %>
-          </div>
-        </div>
-        <div id="form-push-right-bike-img" class="three columns">
-          <div class="field">
-            <%= f.label :price, "Price $" %>
-            <%= f.number_field :price %>
-          </div>
-        </div>
-        <div class="three columns">
-          <div class="field">
-            <%= f.label :contactEmail, "Contact Email" %>
-            <%= f.email_field :contactEmail %>
-          </div>
+          <%= f.label :serialNum, "Serial Number" %>
+          <%= f.text_field :serialNum, class: "serial-num-input" %>
         </div>
       </div>
       <div class="row">
@@ -105,14 +53,50 @@
         </div>
         <div class="three columns">
           <%= f.label :bikeImgURL, "Image URL" %>
-          <%= f.text_field :bikeImgURL %>
+          <%= f.text_field :bikeImgURL, title: "copy and paste an image from the web (this is a default)" %>
         </div>
         <div class="three columns">
+          <%= f.label :color, "Color" %>
+          <%= f.text_field :color %>    
+        </div>
+      </div>
+      <div class="row">
+        <div class="three columns">
+          <%= f.label :category, "Category" %>
+          <%= f.text_field :category %>
+        </div>
+        <div class="three columns">
+          <%= f.label :city, "City" %>
+          <%= f.text_field :city, required: true %>
+        </div>
+         <div class="three columns">
           <%= f.label :description, "Description" %>
           <%= f.text_area :description %>
         </div>
       </div>
       <div class="row">
+        <div class="one column">
+          <%= f.label :stolen %>
+          <%= f.check_box :stolen, class: "check-up" %>
+        </div>
+        <div id="form-push-right-for-sale" class="one column">
+          <%= f.label :for_sale, "Sell" %>
+          <%= f.check_box :for_sale, class: "check-up", id: "for-sale-form" %>
+        </div>
+        <div id="form-push-right-bike-img" class="three columns">
+          <%= f.label :price, "Price $" %>
+          <%= f.number_field :price %>
+        </div>
+        <div class="three columns">
+          <%= f.label :contactEmail, "Contact Email" %>
+          <%= f.email_field :contactEmail %>
+        </div>
+      </div>
+      <div class="row push-down">
+         <div class="three columns">          
+          <%= f.label :proofOfPurchase, "Proof Of Purchase" %>
+          <%= f.file_field :proofOfPurchase %>
+        </div>
         <div class="three columns">
           <%= f.label :components, "Custom Parts" %>
           <%= f.text_area :components %>
@@ -121,6 +105,8 @@
           <%= f.label :componentImgs, "Upload Custom Parts Image" %>
           <%= f.file_field :componentImgs %>
         </div>
+      </div>
+      <div class="row push-down">
         <div id="register-bike-index three columns" class="actions">
           <%= f.submit "Register Bike", id: "register-bike-button" %>
         </div>

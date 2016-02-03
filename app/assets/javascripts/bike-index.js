@@ -11,12 +11,16 @@ $(function() {
     $('#stolen-bikes-index').slideToggle("slow", "linear");
     $('#index-button-container').hide("fast", "linear");
     $('#for-sale-bike-index').hide("slow", "linear");
+    $('.alerts').hide("slow");
+    $('.notices').hide("slow");
   });
 
   $('body').on('click', '#for-sale-index-button', function() {
     $('#for-sale-bike-index').slideToggle("slow", "linear");
     $('#index-button-container').hide("fast", "linear");
     $('#stolen-bikes-index').hide("slow", "linear");
+    $('.alerts').hide("slow");
+    $('.notices').hide("slow");
   });
 
   $('body').on('click', '#stolen-index-button-nav', function() {
@@ -25,6 +29,8 @@ $(function() {
     $('#for-sale-bike-index').hide("slow", "linear");
     $('#new-bike-form-index').hide("slow", "linear");
     $('#search-results-container').hide("slow", "linear");
+    $('.alerts').hide("slow");
+    $('.notices').hide("slow");
   });
 
   $('body').on('click', '#for-sale-index-button-nav', function() {
@@ -33,6 +39,8 @@ $(function() {
     $('#stolen-bikes-index').hide("slow", "linear");
     $('#new-bike-form-index').hide("slow", "linear");
     $('#search-results-container').hide("slow", "linear");
+    $('.alerts').hide("slow");
+    $('.notices').hide("slow");
   });
 
 
@@ -55,7 +63,13 @@ $(function() {
     $('#new-bike-form-index').toggleClass("new-bike-index-full", "linear");
   });
 
-
+// timeout on flash alerts
+  $(document).ready(function(){
+  setTimeout(function(){
+    $('.alerts').remove();
+    $('.notices').remove();
+  }, 3500);
+ });
 
 
 });

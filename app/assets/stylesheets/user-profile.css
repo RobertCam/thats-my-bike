@@ -11,13 +11,13 @@
   display: inline-block;
   position: absolute;
   left: 21%;
-  top: 10%;
+  top: 15%;
   overflow: hidden;
   border-radius: 10px;
 }
 
 .profile-content {
-  height: 450px;
+  height: 600px;
   width: 90%;
   position: relative;
   margin-top: 3%;
@@ -66,8 +66,10 @@
   }
   .profile-content {
     overflow: auto;
-    height: 400px;
-    margin-top: -12%;
+    margin-bottom: 0%;
+  }
+  #user-stats {
+    margin-top: 10%;
   }
   #user-edit-form {
     height: 300px;
@@ -75,7 +77,7 @@
     width: 80%;
   }
   .profile-right-content {
-    top: 80%;
+    top: 40%;
     left: 18%;
     width: 100%;
   }
@@ -92,7 +94,8 @@
     margin-top: 0%;
   }
   #new-bike-form-index-nav {
-    overflow: auto;    
+    overflow: auto; 
+    width: 76%;   
   }
 }
 
