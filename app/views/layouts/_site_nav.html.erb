@@ -4,8 +4,8 @@
       <% if user_signed_in? %>
         <div id="new-bike-index" class="dropdown-item">Register Bike</div>
       <% end %>
-      <!-- <div id="stolen-index-button-nav" class="dropdown-item">Stolen Bikes</div>
-      <div id="for-sale-index-button-nav" class="dropdown-item">Bikes For Sale</div> -->
+      <div id="stolen-index-button-nav" class="dropdown-item">Stolen Bikes</div>
+      <div id="for-sale-index-button-nav" class="dropdown-item">Bikes For Sale</div>
       <% if user_signed_in? %>
         <div class="dropdown-item"><%= link_to('Profile', user_path(current_user)) %></div>
       <% else %>
@@ -17,7 +17,7 @@
     </div>
 </nav>
 
-<div id="login-form-nav-index">
+<div id="login-form-nav-index" class="hidden-form">
   <%= render "devise/sessions/new_session" %>
 </div>
 <!-- hidden bike registration form -->

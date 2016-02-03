@@ -11,13 +11,13 @@
   display: inline-block;
   position: absolute;
   left: 21%;
-  top: 10%;
+  top: 15%;
   overflow: hidden;
   border-radius: 10px;
 }
 
 .profile-content {
-  height: 500px;
+  height: 600px;
   width: 90%;
   position: relative;
   margin-top: 3%;
@@ -69,7 +69,7 @@
     margin-bottom: 0%;
   }
   #user-stats {
-    margin-top: 14%;
+    margin-top: 10%;
   }
   #user-edit-form {
     height: 300px;
