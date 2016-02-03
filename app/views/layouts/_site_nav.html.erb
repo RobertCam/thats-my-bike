@@ -7,7 +7,7 @@
       <div id="stolen-index-button-nav" class="dropdown-item">Stolen Bikes</div>
       <div id="for-sale-index-button-nav" class="dropdown-item">Bikes For Sale</div>
       <% if user_signed_in? %>
-        <div class="dropdown-item"><%= link_to('Profile', user_path(current_user)) %></div>
+        <div class="dropdown-item"><%= link_to('Profile/My Bikes', user_path(current_user)) %></div>
       <% else %>
         <div class="dropdown-item" id="login-nav">Login</div>  
       <% end %>
