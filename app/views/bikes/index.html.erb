@@ -1,9 +1,11 @@
 <%= render "layouts/site_nav" %>
 <%= render "search" %>
-<div id="flash-index">
-  <% render "layouts/flashes" %>
+<div class="alerts">
+  <%= flash[:alert] %>
 </div>
-
+<div class="notices">
+  <%= flash[:notice] %>
+</div>
 <div class="bike-index-top-content">
   <div class="card-container">
     <% if @searchBikes != nil || @searchBikes == "" %>
@@ -18,11 +20,9 @@
     <% end %>
     <div id="for-sale-bike-index">
       <%= render 'for_sale_index' %>
-      <%= paginate @forSaleBikes %>
     </div>
     <div id="stolen-bikes-index">
       <%= render 'stolen_index' %>
-      <%= paginate @stolenBikes %>
     </div>
   </div>
 </div>

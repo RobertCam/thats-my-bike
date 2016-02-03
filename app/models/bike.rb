@@ -4,7 +4,32 @@ class Bike < ActiveRecord::Base
   mount_uploader :bikeImg, BikeImgUploader
   mount_uploader :proofOfPurchase, ProofOfPurchaseUploader
   mount_uploader :componentImgs, ComponentImgsUploader
-  
+
+  validates :make,
+    presence: true
+
+  validates :line,
+    presence: true
+
+  validates :city,
+    presence: true
+
+  # validate :price_validation
+  # validate :contact_email_validation
+
+
+  # def price_validation
+  #   if for_sale == true && price == nil || ""
+  #     errors.add(:price, "Must enter a price to sell a bike")
+  #   end
+  # end
+
+  # def contact_email_validation
+  #   if for_sale == true || stolen == true && contactEmail == nil || ""
+  #     errors.add(:contactEmail, "You must enter a contact email to sell bike or register as stolen")
+  #   end
+  # end
+
   def self.search(query = nil)
     # @searchBikes = Bike.all
     @searchBikes = Bike.where("make LIKE ? OR line LIKE ? OR serialNum LIKE ?", "%#{query}%", "%#{query}%", "%#{query}%") unless query == nil || query == "" 

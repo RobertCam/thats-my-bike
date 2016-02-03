@@ -139,10 +139,13 @@
   width: 70%;
   height: 400px;
   overflow: auto;
-  color: white;
   background-color: rgba(0,0,0,0.5);
   padding-top: 20px;
   border-radius: 10px;
+}
+
+#new-bike-form-index label {
+   color: white;
 }
 
 .new-bike-index-full {
@@ -150,9 +153,13 @@
 }
 
 #register-bike-button {
-  margin-top: 3%;
-  margin-left: 4%;
+  margin-top: 0%;
+  margin-left: 6%;
   background-color: white !important;
+}
+
+.push-down {
+  margin-top: 10px;
 }
 
 @media handheld, screen and (max-width: 640px) { 

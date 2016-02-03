@@ -5,20 +5,21 @@
 }
 
 .show-bike-img {
-  width: 100%;
-  height: auto;
+  max-width: 100%;
+  max-height: 100%;
   border-radius: 10px;
 }
 
 #show-bike-img-container {
-  max-height: 300px;
+  height: 300px;
   position: fixed;
   left: 10%;
   top: 20%;
+  text-align: center;
 }
 
 #show-bike-details-container {
-  margin-top: 9%;
+  margin-top: 7%;
   padding-left: 2%;
   margin-left: 56%;
   width: 36%;
@@ -29,7 +30,6 @@
 }
 
 .edit-bike-button {
-  margin-left: 23%;
   margin-top: 2%;
 }
 
@@ -45,8 +45,8 @@
 
 #bike-edit-form {
   display: none;
-  margin-left: 20%;
-  margin-top: 8%;
+  margin-left: 18%;
+  margin-top: 6%;
   width: 80%;
 }
 

@@ -11,7 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160104200213) do
+ActiveRecord::Schema.define(version: 20160202233658) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "bikes", force: :cascade do |t|
     t.integer  "user_id"
@@ -32,6 +35,7 @@ ActiveRecord::Schema.define(version: 20160104200213) do
     t.string   "components"
     t.string   "componentImgs"
     t.string   "contactEmail"
+    t.string   "city"
   end
 
   create_table "users", force: :cascade do |t|
@@ -57,7 +61,7 @@ ActiveRecord::Schema.define(version: 20160104200213) do
     t.string   "profileImgURL"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
 end

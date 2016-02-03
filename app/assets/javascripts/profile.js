@@ -8,5 +8,4 @@ $('body').on('click', '#profile-edit', function() {
     $('.profile-img').toggleClass("hide-profile", "linear")
     $('.profile-content').toggleClass("profile-full", "linear")
   });
-
 });
