@@ -1,32 +1,27 @@
 <div class="user-bikes-container" title="Your registered bikes!">
   <div id="owl-demo" class="owl-carousel owl-theme">
-  <% if user_signed_in? %>
-    <% @user_bikes = Bike.where(user_id: current_user.id) %>
-    <% if @user_bikes != nil %>
-      <% @user_bikes.each do |bike| %>
-        <div class="item">
-          <div class="user-bike-image-container">
-            <% if bike.bikeImg? %>
-              <%= link_to image_tag(bike.bikeImg, class: "user-bike-image"), bike_path(bike) %>
-            <% else %>
-              <%= link_to image_tag(bike.bikeImgURL, class: "user-bike-image"), bike_path(bike) %> 
-            <% end %>
-          </div>
-          <div class="user-bike-index-info">
-            <div class="user-bike-index-content"><span class="bike-detail-label">Make: </span><%= bike.make %></div>
-            <div class="user-bike-index-content"><span class="bike-detail-label">Model: </span><%= bike.line %></div>
-            <div class="user-bike-index-content"><span class="bike-detail-label">Serial Number: </span><%= bike.serialNum %></div>
-            <div class="user-bike-index-content"><span class="bike-detail-label">Category: </span><%= bike.category %></div>
-            <% if bike.stolen == true %>
-              <div class="stolen">STOLEN</div>
-            <% elsif bike.for_sale == true %>
-              <div class="for-sale-carousel">FOR SALE</div>
-              <div class="user-bike-index-content"><span class="bike-detail-label">Price: </span>$<%= bike.price %></div>
-            <% end %>
-          </div>
+    <% @user_bikes.each do |bike| %>
+      <div class="item">
+        <div class="user-bike-image-container">
+          <% if bike.bikeImg? %>
+            <%= link_to image_tag(bike.bikeImg, class: "user-bike-image"), bike_path(bike) %>
+          <% else %>
+            <%= link_to image_tag(bike.bikeImgURL, class: "user-bike-image"), bike_path(bike) %> 
+          <% end %>
         </div>
-      <% end %>
+        <div class="user-bike-index-info">
+          <div class="user-bike-index-content"><span class="bike-detail-label">Make: </span><%= bike.make %></div>
+          <div class="user-bike-index-content"><span class="bike-detail-label">Model: </span><%= bike.line %></div>
+          <div class="user-bike-index-content"><span class="bike-detail-label">Serial Number: </span><%= bike.serialNum %></div>
+          <div class="user-bike-index-content"><span class="bike-detail-label">Category: </span><%= bike.category %></div>
+          <% if bike.stolen == true %>
+            <div class="stolen">STOLEN</div>
+          <% elsif bike.for_sale == true %>
+            <div class="for-sale-carousel">FOR SALE</div>
+            <div class="user-bike-index-content"><span class="bike-detail-label">Price: </span>$<%= bike.price %></div>
+          <% end %>
+        </div>
+      </div>
     <% end %>
-  <% end %>
   </div>
 </div>
