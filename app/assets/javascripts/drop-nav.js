@@ -18,6 +18,7 @@ $('body').on('click', '#new-bike-index-nav', function() {
   $('#new-bike-form-index-nav').slideToggle("slow", "linear");
   $('#show-bike-details-container').fadeToggle("fast");
   $('#show-bike-img-container').fadeToggle("fast");
+  $('.index-footer').fadeToggle("fast");
   $('.profile-img').fadeToggle("slow");
   $('.profile-right-content').fadeToggle("slow");
 });

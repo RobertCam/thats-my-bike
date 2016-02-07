@@ -58,6 +58,12 @@
   margin-top: 10%;
 }
 
+.no-bike-message {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 5%;
+}
+
 @media handheld, screen and (max-width: 640px) { 
   .profile-img-container {
     left: 18%;
@@ -70,6 +76,7 @@
   }
   #user-stats {
     margin-top: 10%;
+    margin-left: 13%;
   }
   #user-edit-form {
     height: 300px;

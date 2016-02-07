@@ -22,11 +22,12 @@
   </div>
 </div>
 
-
 <div class="index-footer">
-  <% if current_user %>
-    <%= render "bikes/user_bikes" %>
+  <% if @user_bikes.blank? %>
+    <div class="no-bike-message">
+      <div id="new-bike-index-nav" class="dropdown-item">Register a bike and have it show up here!</div>
+    </div>
   <% else %>
-    <%= render "bikes/info" %>
+    <%= render "bikes/user_bikes" %>
   <% end %>
 </div>
