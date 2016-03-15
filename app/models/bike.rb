@@ -32,9 +32,10 @@ class Bike < ActiveRecord::Base
 
   def self.search(query = nil)
     # @searchBikes = Bike.all
-    @searchBikes = Bike.where("make LIKE ? OR line LIKE ? OR serialNum LIKE ?", "%#{query}%", "%#{query}%", "%#{query}%") unless query == nil || query == "" 
     if query == nil || query == ""
       @searchBikes = nil
+    else
+      @searchBikes = Bike.where("make ilike :q or line ilike :q or serial ilike :q", q: "%#{query}%") 
     end
     @searchBikes
   end

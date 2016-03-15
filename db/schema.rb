@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160203191356) do
+ActiveRecord::Schema.define(version: 20160315054057) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 20160203191356) do
     t.datetime "updated_at",                                                                                             null: false
     t.string   "bikeImgURL",      default: "https://s3-us-west-2.amazonaws.com/bike-reg-sample-images/bike-default.jpg"
     t.string   "proofOfPurchase"
-    t.string   "serialNum"
+    t.string   "serial"
     t.string   "components"
     t.string   "componentImgs"
     t.string   "contactEmail"
