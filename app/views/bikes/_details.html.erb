@@ -3,11 +3,11 @@
   <h6><span class="bike-detail-label">City: </span><%= @bike.city %></h6>
   <h6><span class="bike-detail-label">Description: </span><%= simple_format(@bike.description) %></h6>
   <h6><span class="bike-detail-label">Colour: </span><%= @bike.color %></h6>
-  <% if @bike.components == nil || "" %>
-    <h6><span class="bike-detail-label">Custom Components: </span>None</h6>
-  <% else %>
+  <% if @bike.components? %>
     <h6 class="components-label"><span class="bike-detail-label">Custom Components: </span></h6>
       <h6 class="component-item"><%= simple_format(@bike.components) %></h6>
+  <% else %>
+    <h6><span class="bike-detail-label">Custom Components: </span>None</h6>
   <% end %>
   <% if @bike.componentImgs? %>
     <div id="show-component-images-button" class="show-button">Show Custom Component</div>
