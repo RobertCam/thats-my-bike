@@ -2,7 +2,6 @@
 .background-container {
    width: 100%;
   height: 100%;
-  /*negative top margin to center background. see landing content to adjust child elements*/
   position: fixed;
 }
 
@@ -12,9 +11,9 @@
 
 .header-image-container {
   width: 100%;
-  height: 950px;
+  height: 100%;
   /*negative top margin to center background. see landing content to adjust child elements*/
-  margin-top: -20%;
+  /*margin-top: -20%;*/
   position: relative;
   background-image: url("https://s3-us-west-2.amazonaws.com/bike-reg-sample-images/bike-gif.gif");
   background-repeat: no-repeat;
