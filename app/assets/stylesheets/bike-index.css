@@ -6,8 +6,7 @@
 }
 
 .bike-index-top-content {
-  min-height: 80%;
-  min-height: 650px;
+  min-height: 820px;
   overflow: auto;
   margin-top: -2%;
   padding-top: 2%;
@@ -19,8 +18,7 @@
   background-attachment: fixed;
 }
 
-.card-container {
-  /*height: 80%;*/  
+.card-container {  
   margin-bottom: 16%;
 }
 
