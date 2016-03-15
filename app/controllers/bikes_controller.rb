@@ -49,7 +49,7 @@ class BikesController < ApplicationController
   protected
 
   def bike_params
-    params.require(:bike).permit(:make, :line, :bikeImg, :bikeImgURL, :color, :category, :proofOfPurchase, :serialNum, :stolen, :for_sale, :price, :description, :components, :componentImgs, :contactEmail, :city)
+    params.require(:bike).permit(:make, :line, :bikeImg, :bikeImgURL, :color, :category, :proofOfPurchase, :serial, :stolen, :for_sale, :price, :description, :components, :componentImgs, :contactEmail, :city)
   end
 
 end
